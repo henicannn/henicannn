@@ -17,6 +17,10 @@
     display: none;
 }
 
+body {
+    background-color: #c4c4c498;
+}
+
 .homePage {
     position: absolute;
 }
@@ -116,4 +120,47 @@
     color: #ff519a;
     font-family: 'Poppins', sans-serif;
     transition: 0.3s;
+}
+
+.aboutPage {
+    position: absolute;
+    top: 1100px;
+    /* margin-top: 955px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutSectionOne h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #A92061;
+    font-weight: 1000;
+    padding-left: 160px;
+    line-height: 80px;
+}
+
+.aboutSectionOne p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 1000;
+    padding-left: 160px;
+    line-height: 30px;
+    width: 800px;
+    padding-top: 30px;
+}
+
+.aboutSectionOne img {
+    width: 350px;
+    margin-left: 280px;
+    padding-top: 60px;
+}
+
+.aboutSectionTwo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #A92061;
+    font-weight: 1000;
+    padding-left: 160px;
+    line-height: 80px;
 }
