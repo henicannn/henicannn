@@ -187,7 +187,7 @@ body {
     /* line-height: 80px; */
 }
 
-.fronEndDev li {
+.fronEndDev p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #000000;
@@ -208,7 +208,7 @@ body {
     /* line-height: 80px; */
 }
 
-.dataDev li {
+.dataDev p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #000000;
@@ -234,7 +234,7 @@ body {
     /* line-height: 80px; */
 }
 
-.backEndDev li {
+.backEndDev p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #000000;
@@ -255,7 +255,7 @@ body {
     /* line-height: 80px; */
 }
 
-.creativeDev li {
+.creativeDev p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #000000;
