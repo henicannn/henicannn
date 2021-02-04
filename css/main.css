@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.backgroundAnimation {
+    position: relative;
+    z-index: -1;
+}
+
+.mainName h3 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 60px;
+    color: #E31B6D;
+    font-weight: 1000;
+    padding-top: 80px;
+    padding-left: 160px;
+    top: 200px;
+    line-height: 80px;
+}
+
+.mainName h4 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-left: 160px;
+    top: 390px;
+}
+
+.mainName button {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    /* border: #E31B6D; */
+    border-color: #E31B6D;
+    background-color: #b4507a00;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 550px;
+    margin-left: 160px;
+    font-size: 18px;
+}
+
+.mainName button:hover {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    /* border: #E31B6D; */
+    border-color: #E31B6D;
+    background-color: #E31B6D;
+    /* background-color: #b4507a00; */
+    transition: 0.5s;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 550px;
+    margin-left: 160px;
+    font-size: 18px;
+}
