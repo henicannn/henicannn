@@ -7,37 +7,43 @@
     <title>Henicannn</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="p5.js"></script>
     <script src="p5.sound.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 
 </head>
 
 <body>
-    <div class="homePage">
+    <div id="homePage">
         <h2 class="hidden">Home Page with Animation</h2>
         <div class="mainName">
             <h2 class="hidden">Heni Manavadariya</h2>
             <h3>Heni <br> Manavadariya</h3>
             <h4>Turning Imagination into reality.
             </h4>
-            <button>Let's take a leap ▼</button>
+            <button class="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
         </div>
         <script class="backgroundAnimation" src="sketch.js">
         </script>
     </div>
-    <section class="mainNav">
-        <ul>
-            <li><a href="#contact">CONTACT ME</a></li>
-            <li><a href="#work">MY WORK</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#home">HOME</a></li>
-        </ul>
-    </section>
 
-    <div class="aboutPage">
+    <nav id="mainNav" class="hidden">
+        <ul>
+            <li class="selected"><a href="index.html">CONTACT ME</a></li>
+            <li class="selected"><a href="javascript:void(0)">MY WORK</a></li>
+            <li class="selected"><a href="#aboutPage">ABOUT</a></li>
+            <li class="selected"><a href="#homePage">HOME</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div id="aboutPage">
+
         <h2 class="hidden">About Page</h2>
         <section class="aboutSectionOne">
             <h3>Who is Heni ?</h3>
@@ -96,6 +102,27 @@
     </div>
 
 
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("mainNav");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= 0) {
+                navbar.classList.add("sticky")
+
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script src="js/navBar.js"></script>
 </body>
 
 </html>
