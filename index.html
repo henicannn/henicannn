@@ -33,7 +33,7 @@
 
     <nav id="mainNav" class="hidden">
         <ul>
-            <li class="selected"><a id="contact" class="nav" href="index.html">CONTACT ME</a></li>
+            <li class="selected"><a id="contact" class="nav" href="#contactPage">CONTACT ME</a></li>
             <li class="selected"><a id="work" class="nav" href="#workPage">MY WORK</a></li>
             <li class="selected"><a id="about" class="nav active" href="#aboutPage">ABOUT</a></li>
             <li class="selected"><a id="home" class="nav" href="#homePage">HOME</a></li>
@@ -107,16 +107,18 @@
         <section class="workFlex">
             <h3>PORTFOLIO</h3>
             <section class="workSectionOne">
-                <span class="overlay">INSECTOPEDIA</span>
+
+                <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
                 <img src="images/insectopedia.jpg">
-                <span class="overlay">ONTARIO COVID-19 DATA ANALYSIS</span>
+
+                <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
                 <img src="images/covidontario.jpg">
             </section>
 
             <section class="workSectionTwo">
-                <span class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</span>
+                <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
                 <img src="images/moaone.png">
-                <span class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</span>
+                <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
                 <img src="images/moatwo.png">
             </section>
         </section>
@@ -145,6 +147,11 @@
                 navbar.classList.remove("sticky");
 
             }
+        }
+
+        function redirectIt(obj) {
+            var goToLink = obj.getAttribute("href");
+            window.location.href = goToLink;
         }
     </script>
 
