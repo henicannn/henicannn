@@ -94,6 +94,10 @@ body {
     font-size: 18px;
 }
 
+#mainNav {
+    z-index: 100;
+}
+
 #mainNav ul {
     list-style-type: none;
     margin: 0;
@@ -296,4 +300,89 @@ body {
     width: 570px;
     padding-bottom: 10px;
     /* line-height: 80px; */
+}
+
+#workPage {
+    position: absolute;
+    /* z-index: -1; */
+    top: 1900px;
+    /* background-color: #E31B6D; */
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workFlex h3 {
+    z-index: -1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #A92061;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 80px;
+    padding: 50px;
+}
+
+.workFlex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workSectionOne {
+    display: flex;
+    flex-direction: row;
+}
+
+.workSectionOne img {
+    width: 650px;
+    height: 500px;
+}
+
+.overlay {
+    width: 650px;
+    height: 500px;
+    background-color: #ffffff00;
+    z-index: 1;
+    margin-right: -650px;
+}
+
+.overlay {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.overlay:hover {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.overlay:hover {
+    width: 650px;
+    transition: 0.8s;
+    cursor: pointer;
+    background-color: #a92060ec;
+    /* z-index: 10; */
+    margin-right: -650px;
+}
+
+.workSectionTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+.workSectionTwo img {
+    width: 650px;
+    height: 500px;
+    /* padding: 30px; */
 }
