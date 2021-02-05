@@ -25,7 +25,7 @@
             <h3>Heni <br> Manavadariya</h3>
             <h4>Turning Imagination into reality.
             </h4>
-            <button class="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
+            <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
         </div>
         <script class="backgroundAnimation" src="sketch.js">
         </script>
@@ -33,10 +33,10 @@
 
     <nav id="mainNav" class="hidden">
         <ul>
-            <li class="selected"><a href="index.html">CONTACT ME</a></li>
-            <li class="selected"><a href="javascript:void(0)">MY WORK</a></li>
-            <li class="selected"><a href="#aboutPage">ABOUT</a></li>
-            <li class="selected"><a href="#homePage">HOME</a></li>
+            <li class="selected"><a id="contact" class="nav" href="index.html">CONTACT ME</a></li>
+            <li class="selected"><a id="work" class="nav" href="javascript:void(0)">MY WORK</a></li>
+            <li class="selected"><a id="about" class="nav active" href="#aboutPage">ABOUT</a></li>
+            <li class="selected"><a id="home" class="nav" href="#homePage">HOME</a></li>
         </ul>
     </nav>
 
@@ -104,6 +104,8 @@
 
 
 
+
+
     <script>
         window.onscroll = function() {
             myFunction()
@@ -112,12 +114,15 @@
         var navbar = document.getElementById("mainNav");
         var sticky = navbar.offsetTop;
 
+
         function myFunction() {
             if (window.pageYOffset >= 0) {
                 navbar.classList.add("sticky")
 
+
             } else {
                 navbar.classList.remove("sticky");
+
             }
         }
     </script>

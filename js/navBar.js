@@ -32,3 +32,16 @@ $(window).scroll(function() {
         $('#homePage').fadeIn();
     }
 });
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 500) {
+        $("#about").addClass("active").animate();
+        $("#home").removeClass("active").animate();
+
+    } else {
+        $("#about").removeClass("active").animate();
+        $("#home").addClass("active").animate();
+
+    }
+});

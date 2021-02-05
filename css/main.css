@@ -66,6 +66,7 @@ body {
     border-width: 2px;
     margin-top: 550px;
     margin-left: 160px;
+    cursor: pointer;
 }
 
 .mainName button a {
@@ -118,6 +119,18 @@ body {
     padding: 14px 35px;
     text-decoration: none;
     font-weight: 400;
+    cursor: pointer;
+}
+
+#mainNav li a.active {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: #E31B6D;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.8s;
 }
 
 #mainNav li a:hover {
@@ -125,6 +138,11 @@ body {
     font-family: 'Poppins', sans-serif;
     transition: 0.3s;
 }
+
+
+/* .activeHome .activeAbout .activeWork .activeContact {
+    color: #ff519a;
+} */
 
 .sticky {
     top: 0;

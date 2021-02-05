@@ -1,0 +1,39 @@
+#mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 200px;
+    overflow: hidden;
+    background-color: rgb(25, 28, 36);
+    /* Safari */
+    position: absolute;
+    width: 1920px;
+    z-index: 100;
+    /* margin-top: 955px; */
+}
+
+#mainNav li {
+    float: right;
+}
+
+#mainNav li a {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#mainNav li a:hover {
+    color: #ff519a;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    margin-top: 970px;
+    width: 100%;
+}
