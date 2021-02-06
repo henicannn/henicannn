@@ -161,11 +161,12 @@ body {
 
 #aboutPage {
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     top: 1100px;
     /* margin-top: 955px; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .aboutSectionOne h3 {
@@ -192,6 +193,41 @@ body {
     width: 350px;
     margin-left: 280px;
     padding-top: 60px;
+}
+
+.aboutSectionOne button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-color: #E31B6D;
+    background-color: #b4507a00;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 480px;
+    margin-left: -285px;
+    cursor: pointer;
+}
+
+.aboutSectionOne button a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+
+.aboutSectionOne button:hover {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-color: #E31B6D;
+    background-color: #E31B6D;
+    transition: 0.5s;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 18px;
 }
 
 .aboutSectionTwo {
