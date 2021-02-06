@@ -19,9 +19,10 @@
 
 body {
     background-color: #c4c4c498;
-    height: 5000px;
+    height: 100vh;
+    width: 100vh;
     overflow-x: hidden;
-    margin: 0;
+    /* margin: 0; */
 }
 
 #homePage {
@@ -81,10 +82,8 @@ body {
     position: absolute;
     width: 200px;
     height: 50px;
-    /* border: #E31B6D; */
     border-color: #E31B6D;
     background-color: #E31B6D;
-    /* background-color: #b4507a00; */
     transition: 0.5s;
     color: #ffffff;
     border-style: solid;
@@ -105,10 +104,8 @@ body {
     padding-right: 200px;
     overflow: hidden;
     background-color: rgb(25, 28, 36);
-    /* Safari */
     position: absolute;
     width: 1920px;
-    /* padding-top: 969px; */
 }
 
 #mainNav li {
@@ -143,27 +140,25 @@ body {
     transition: 0.3s;
 }
 
-
-/* .activeHome .activeAbout .activeWork .activeContact {
-    color: #ff519a;
-} */
-
 .sticky {
     top: 0;
     position: fixed;
     width: 100%;
 }
 
-
-/* .sticky+.content {
-    padding-top: 60px;
-} */
+.aboutParent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
 
 #aboutPage {
     position: absolute;
-    /* z-index: -1; */
     top: 1100px;
-    /* margin-top: 955px; */
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,7 +251,6 @@ body {
     font-weight: 1000;
     padding-left: 160px;
     width: 570px;
-    /* line-height: 80px; */
 }
 
 .fronEndDev p {
@@ -267,7 +261,6 @@ body {
     padding-left: 160px;
     width: 570px;
     padding-bottom: 10px;
-    /* line-height: 80px; */
 }
 
 .dataDev h3 {
@@ -277,7 +270,6 @@ body {
     font-weight: 1000;
     padding-left: 160px;
     width: 480px;
-    /* line-height: 80px; */
 }
 
 .dataDev p {
@@ -288,7 +280,6 @@ body {
     padding-left: 160px;
     width: 570px;
     padding-bottom: 10px;
-    /* line-height: 80px; */
 }
 
 .aboutSubSectionTwo {
@@ -303,7 +294,6 @@ body {
     font-weight: 1000;
     padding-left: 160px;
     width: 570px;
-    /* line-height: 80px; */
 }
 
 .backEndDev p {
@@ -314,7 +304,6 @@ body {
     padding-left: 160px;
     width: 570px;
     padding-bottom: 10px;
-    /* line-height: 80px; */
 }
 
 .creativeDev h3 {
@@ -324,7 +313,6 @@ body {
     font-weight: 1000;
     padding-left: 160px;
     width: 480px;
-    /* line-height: 80px; */
 }
 
 .creativeDev p {
@@ -335,14 +323,11 @@ body {
     padding-left: 160px;
     width: 570px;
     padding-bottom: 10px;
-    /* line-height: 80px; */
 }
 
 #workPage {
     position: absolute;
-    /* z-index: -1; */
     top: 1900px;
-    /* background-color: #E31B6D; */
     width: 1920px;
     display: flex;
     justify-content: center;
@@ -408,7 +393,6 @@ body {
     transition: 0.8s;
     cursor: pointer;
     background-color: #a92060ec;
-    /* z-index: 10; */
     margin-right: -650px;
 }
 
@@ -420,5 +404,4 @@ body {
 .workSectionTwo img {
     width: 650px;
     height: 500px;
-    /* padding: 30px; */
 }
