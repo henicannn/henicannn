@@ -189,7 +189,7 @@
     }
     .aboutSectionTwo {
         height: 760px;
-        margin-top: -80px;
+        /* margin-top: -80px; */
         padding-left: 50px;
     }
     .skills {
@@ -200,7 +200,7 @@
         width: 600px;
         /* height: 760px; */
     }
-    .skills h3 {
+    .aboutSectionTwo h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: #A92061;
@@ -285,16 +285,25 @@
         text-align: center;
         padding-bottom: 10px;
     }
+    .workFlex h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #A92061;
+        font-weight: 800;
+        text-align: center;
+        line-height: 80px;
+    }
     .workSectionOne {
         display: flex;
         flex-direction: row;
-        margin-top: 200px;
+        margin-top: 50px;
+        margin-left: 450px;
     }
     .workSectionOne img {
         width: 500px;
         height: 380px;
         position: relative;
-        margin-bottom: 220px;
+        /* margin-bottom: 220px; */
     }
     .overlayOne {
         width: 500px;
@@ -308,7 +317,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -220px;
         color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
@@ -333,7 +341,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -220px;
         color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
@@ -357,7 +364,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -220px;
         color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
@@ -382,9 +388,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -220px;
         color: rgba(255, 255, 255, 0);
-        /* margin-left: -20px; */
         cursor: pointer;
     }
     .overlayFour:hover {
@@ -398,6 +402,7 @@
     .workSectionTwo {
         display: flex;
         flex-direction: row;
+        margin-left: 450px;
     }
     .workSectionTwo img {
         width: 500px;
