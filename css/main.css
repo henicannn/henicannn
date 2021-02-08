@@ -106,6 +106,7 @@ canvas {
 
 #mainNav {
     z-index: 100;
+    position: absolute;
 }
 
 #mainNav ul {
@@ -319,6 +320,9 @@ canvas {
     font-size: 18px;
     color: #A92061;
     font-weight: 1000;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-bottom: 35px;
     width: 100%;
 }
 
@@ -348,4 +352,68 @@ canvas {
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
+}
+
+#workPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workFlex {
+    /* z-index: -1; */
+}
+
+.workFlex h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #A92061;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 80px;
+    padding: 50px;
+}
+
+.workSectionOne img {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    margin-top: -220px;
+}
+
+.workSectionTwo img {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    margin-top: -220px;
+}
+
+.overlay {
+    width: 300px;
+    height: 220px;
+    background-color: #ffffff00;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.overlay:hover {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 300px;
+    height: 220px;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #a92060ec;
+    /* margin-right: -650px; */
 }

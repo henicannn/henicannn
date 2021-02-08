@@ -62,7 +62,7 @@
 
                 </section>
                 <section class="aboutSectionTwo">
-                    <h2 class="hidden">Skills</h2>
+                    <h2 class="hidden">SKILLS</h2>
                     <h3>Skills</h3>
 
                     <section class="aboutSubSectionOne">
@@ -126,27 +126,36 @@
             </section>
         </section>
 
-        <script>
-            function resize() {
-                $("#canvas").outerHeight($(window).height() - $("#canvas").offset().top - Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
-            }
-            $(document).ready(function() {
-                resize();
-                $(window).on("resize", function() {
-                    resize();
-                });
-            });
+        <section class="workParent">
+            <h2 class="hidden">Work Page</h2>
+            <section id="workPage">
+                <h2 class="hidden">Work Page</h2>
 
-            function myFunction() {
-                var x = document.getElementById("mainNav");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
+                <section class="workFlex">
+                    <h3>PORTFOLIO</h3>
+                    <section class="workSectionOne">
 
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
+                        <img src="images/insect.png">
+
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
+                        <img src="images/covidtwo.jpg">
+                    </section>
+
+                    <section class="workSectionTwo">
+
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
+                        <img src="images/moaone.png">
+
+                        <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
+                        <img src="images/moatwo.png">
+                    </section>
+                </section>
+            </section>
+        </section>
+
+
+        <script src="js/canvasResponsive.js"></script>
         <script src="js/navBar.js"></script>
         <script src="js/inspectElement.js"></script>
     </main>

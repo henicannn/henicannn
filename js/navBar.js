@@ -57,3 +57,13 @@ $(window).scroll(function() {
         $("#work").removeClass("active").animate();
     }
 });
+
+
+function myFunction() {
+    var x = document.getElementById("mainNav");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
