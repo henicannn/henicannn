@@ -1,5 +1,8 @@
+var w = window.innerWidth;
+var h = window.innerHeight;
+
 function setup() {
-    createCanvas(1920, 969, WEBGL);
+    createCanvas(w, h, WEBGL);
     c1 = color(200);
     c2 = color(255, 255, 255);
 
@@ -25,10 +28,17 @@ function draw() {
             );
             rotateZ(frameCount * 0.002);
             push();
-            sphere(1, 6, 4);
+            sphere(1, 1, 1);
             pop();
             // fill(25, 80, 60, 0.1)
         }
         pop();
     }
+}
+
+window.onresize = function() {
+    // assigns new values for width and height variables
+    w = window.innerWidth;
+    h = window.innerHeight;
+    canvas.size(w, h);
 }

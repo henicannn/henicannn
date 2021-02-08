@@ -2,70 +2,75 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Meet Heni</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="js/p5.js"></script>
     <script src="js/p5.sound.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-
 </head>
 
 <body>
+
     <main class="mainContainer">
         <header>
-            <div id="homePage">
-                <h2 class="hidden">Home Page with Animation</h2>
-                <div class="mainName">
-                    <h2 class="hidden">Heni Manavadariya</h2>
-                    <h3>Heni <br> Manavadariya</h3>
-                    <h4>Turning Imagination into reality.
-                    </h4>
-                    <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
-                </div>
-                <div class="canvas">
-                    <script src="js/sketch.js">
-                    </script>
-                </div>
-            </div>
 
+            <button onclick="myFunction()" id="openButton">☰</button>
             <nav id="mainNav" class="hidden">
+
                 <ul>
                     <li class="selected"><a id="contact" class="nav" href="#contactPage">CONTACT ME</a></li>
                     <li class="selected"><a id="work" class="nav" href="#workPage">MY WORK</a></li>
-                    <li class="selected"><a id="about" class="nav active" href="#aboutPage">ABOUT</a></li>
+                    <li class="selected"><a id="about" class="nav" href="#aboutPage">ABOUT</a></li>
                     <li class="selected"><a id="home" class="nav" href="#homePage">HOME</a></li>
                 </ul>
             </nav>
 
+            <section id="homePage">
+                <h2 class="hidden">Home Page with Animation</h2>
+                <section class="mainName">
+                    <h2 class="hidden">Heni Manavadariya</h2>
+                    <h3>Heni</h3>
+                    <h3>Manavadariya</h3>
+                    <h4>Turning Imagination into reality.
+                    </h4>
+                    <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
+                </section>
+                <section id="canvas">
+                    <script src="js/sketch.js">
+                    </script>
+                </section>
+            </section>
         </header>
 
         <section class="aboutParent">
             <h2 class="hidden">About Parent Container</h2>
-            <div id="aboutPage">
+            <section id="aboutPage">
 
                 <h2 class="hidden">About Page</h2>
                 <section class="aboutSectionOne">
                     <h3>Who is Heni ?</h3>
                     <p>Accomplished media development with a humbled soul and eager to learn attitude. Organized problem solver who swiftly handles data analysis tools, designing tools, along with vast experience in web-based coding.</p>
-                    <img src="images/heni.png">
+                    <img src="images/heni.png" alt="Heni">
                     <button id="selected"><a href="includes/heni_resume.pdf" target="_blank">My Resume ▶</a></button>
 
                 </section>
                 <section class="aboutSectionTwo">
+                    <h2 class="hidden">Skills</h2>
                     <h3>Skills</h3>
 
                     <section class="aboutSubSectionOne">
+                        <h2 class="hidden">About Sub Section One</h2>
 
                         <section class="fronEndDev">
+                            <h2 class="hidden">Front-End Development</h2>
+
                             <h3>Front-End Development</h3>
                             <p>HTML5</p>
                             <p>CSS3</p>
@@ -76,6 +81,8 @@
                         </section>
 
                         <section class="dataDev">
+                            <h2 class="hidden">Data Visualization</h2>
+
                             <h3>Data Visualization</h3>
                             <p>Python Pandas</p>
                             <p>Tableau</p>
@@ -86,7 +93,11 @@
                         </section>
                     </section>
                     <section class="aboutSubSectionTwo">
+                        <h2 class="hidden">About Sub Section Two</h2>
+
                         <section class="backEndDev">
+                            <h2 class="hidden">Back-End Development</h2>
+
                             <h3>Back-End Development</h3>
                             <p>PHP</p>
                             <p>MySQL</p>
@@ -98,6 +109,9 @@
                         </section>
 
                         <section class="creativeDev">
+                            <h2 class="hidden">Creative</h2>
+
+
                             <h3>Creative</h3>
                             <p>Cinema 4D</p>
                             <p>Photoshop CS6</p>
@@ -109,66 +123,33 @@
                         </section>
                     </section>
                 </section>
-            </div>
+            </section>
         </section>
 
-        <section class="workParent">
-            <h2 class="hidden">Work Page</h2>
-            <div id="workPage">
-                <h2 class="hidden">Work Page</h2>
-
-                <section class="workFlex">
-                    <h3>PORTFOLIO</h3>
-                    <section class="workSectionOne">
-
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
-                        <img src="images/insect.png">
-
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
-                        <img src="images/covidtwo.jpg">
-                    </section>
-
-                    <section class="workSectionTwo">
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                        <img src="images/moaone.png">
-                        <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                        <img src="images/moatwo.png">
-                    </section>
-                </section>
-            </div>
-        </section>
-    </main>
-
-
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        var navbar = document.getElementById("mainNav");
-        var sticky = navbar.offsetTop;
-
-
-        function myFunction() {
-            if (window.pageYOffset >= 0) {
-                navbar.classList.add("sticky")
-
-
-            } else {
-                navbar.classList.remove("sticky");
-
+        <script>
+            function resize() {
+                $("#canvas").outerHeight($(window).height() - $("#canvas").offset().top - Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
             }
-        }
+            $(document).ready(function() {
+                resize();
+                $(window).on("resize", function() {
+                    resize();
+                });
+            });
 
-        function redirectIt(obj) {
-            var goToLink = obj.getAttribute("href");
-            window.location.href = goToLink;
-        }
-    </script>
+            function myFunction() {
+                var x = document.getElementById("mainNav");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
 
-    <script src="js/navBar.js"></script>
-    <script src="js/inspectElement.js"></script>
-
+        <script src="js/navBar.js"></script>
+        <script src="js/inspectElement.js"></script>
+    </main>
 
 </body>
 
