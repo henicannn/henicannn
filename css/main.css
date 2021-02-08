@@ -61,7 +61,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: #E31B6D;
-    font-weight: 1000;
+    font-weight: 800;
     line-height: 50px;
 }
 
@@ -157,6 +157,7 @@ canvas {
 }
 
 #openButton {
+    display: block;
     z-index: 150;
     position: fixed;
     top: 0;
@@ -196,7 +197,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     text-align: center;
     line-height: 80px;
 }
@@ -205,7 +206,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-weight: 1000;
+    font-weight: 800;
     line-height: 30px;
     padding-top: 30px;
     text-align: center;
@@ -262,7 +263,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     text-align: center;
     line-height: 80px;
 }
@@ -277,7 +278,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
 }
 
@@ -285,7 +286,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
@@ -295,7 +296,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
 }
 
@@ -303,7 +304,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
@@ -319,7 +320,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     line-height: 20px;
     padding-top: 30px;
     padding-bottom: 35px;
@@ -330,7 +331,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
@@ -340,7 +341,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
 }
 
@@ -348,7 +349,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-weight: 1000;
+    font-weight: 800;
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
@@ -371,7 +372,7 @@ canvas {
     font-size: 40px;
     color: #A92061;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 800;
     line-height: 80px;
     padding: 50px;
 }
@@ -436,7 +437,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #A92061;
-    font-weight: 1000;
+    font-weight: 800;
     text-align: center;
     line-height: 80px;
 }

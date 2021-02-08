@@ -17,22 +17,31 @@ $(document).ready(function() {
     });
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-        $('#openButton').fadeIn();
+if ($(window).width() < 767) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#openButton').fadeIn();
 
-    } else {
-        $('#openButton').fadeOut();
-    }
-});
+        } else {
+            $('#openButton').fadeOut();
+        }
+    });
+} else {
+    // change functionality for larger screens
+}
 
-// $(window).scroll(function() {
-//     if ($(this).scrollTop() > 0) {
-//         $('#homePage').fadeOut();
-//     } else {
-//         $('#homePage').fadeIn();
-//     }
-// });
+if ($(window).width() > 1280) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#mainNav').fadeIn();
+        } else {
+            $('#mainNav').fadeOut();
+        }
+    });
+} else {
+    // change functionality for larger screens
+}
+
 
 
 $(window).scroll(function() {

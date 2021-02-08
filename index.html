@@ -9,6 +9,7 @@
     <title>Meet Heni</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="js/p5.js"></script>
@@ -25,10 +26,10 @@
             <nav id="mainNav" class="hidden">
 
                 <ul>
-                    <li class="selected"><a id="contact" class="nav" href="#formPage">CONTACT ME</a></li>
-                    <li class="selected"><a id="work" class="nav" href="#workPage">MY WORK</a></li>
-                    <li class="selected"><a id="about" class="nav" href="#aboutPage">ABOUT</a></li>
-                    <li class="selected"><a id="home" class="nav" href="#homePage">HOME</a></li>
+                    <li><a id="contact" class="nav" href="#formPage">CONTACT ME</a></li>
+                    <li><a id="work" class="nav" href="#workPage">MY WORK</a></li>
+                    <li><a id="about" class="nav" href="#aboutPage">ABOUT</a></li>
+                    <li><a id="home" class="nav" href="#homePage">HOME</a></li>
                 </ul>
             </nav>
 
@@ -38,11 +39,11 @@
                     <h2 class="hidden">Heni Manavadariya</h2>
                     <h3>Heni</h3>
                     <h3>Manavadariya</h3>
-                    <h4>Turning Imagination into reality.
-                    </h4>
+                    <h4>Turning Imagination into reality.</h4>
                     <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
                 </section>
                 <section id="canvas">
+                    <h2 class="hidden">Animation Canvas</h2>
                     <script src="js/sketch.js">
                     </script>
                 </section>
@@ -61,65 +62,73 @@
                     <button id="selected"><a href="includes/heni_resume.pdf" target="_blank">My Resume ▶</a></button>
 
                 </section>
+
+
                 <section class="aboutSectionTwo">
-                    <h2 class="hidden">SKILLS</h2>
+
                     <h3>Skills</h3>
+                    <section class="skills">
+                        <h2 class="hidden">SKILLS</h2>
+                        <!-- <h3>Skills</h3> -->
 
-                    <section class="aboutSubSectionOne">
-                        <h2 class="hidden">About Sub Section One</h2>
+                        <section class="aboutSubSectionOne">
+                            <h2 class="hidden">About Sub Section One</h2>
 
-                        <section class="fronEndDev">
-                            <h2 class="hidden">Front-End Development</h2>
+                            <section class="fronEndDev">
+                                <h2 class="hidden">Front-End Development</h2>
 
-                            <h3>Front-End Development</h3>
-                            <p>HTML5</p>
-                            <p>CSS3</p>
-                            <p>Sass</p>
-                            <p>JavaScript</p>
-                            <p>JQuery</p>
-                            <p>GitHub</p>
+                                <h3>Front-End Development</h3>
+                                <p>HTML5</p>
+                                <p>CSS3</p>
+                                <p>Sass</p>
+                                <p>JavaScript</p>
+                                <p>JQuery</p>
+                                <p>Bootstrap</p>
+                                <p>GitHub</p>
+                            </section>
+
+                            <section class="dataDev">
+                                <h2 class="hidden">Data Visualization</h2>
+
+                                <h3>Data Visualization</h3>
+                                <p>Python Pandas</p>
+                                <p>Tableau</p>
+                                <p>D3.js</p>
+                                <p>chart.js</p>
+                                <p>Google Charts</p>
+                                <p>p5.js</p>
+                                <p>Arduino | Raspberry Pi</p>
+                            </section>
                         </section>
+                        <section class="aboutSubSectionTwo">
+                            <h2 class="hidden">About Sub Section Two</h2>
 
-                        <section class="dataDev">
-                            <h2 class="hidden">Data Visualization</h2>
+                            <section class="backEndDev">
+                                <h2 class="hidden">Back-End Development</h2>
 
-                            <h3>Data Visualization</h3>
-                            <p>Python Pandas</p>
-                            <p>Tableau</p>
-                            <p>D3.js</p>
-                            <p>chart.js</p>
-                            <p>p5.js</p>
-                            <p>Arduino | Raspberry Pi</p>
-                        </section>
-                    </section>
-                    <section class="aboutSubSectionTwo">
-                        <h2 class="hidden">About Sub Section Two</h2>
+                                <h3>Back-End Development</h3>
+                                <p>PHP</p>
+                                <p>MySQL</p>
+                                <p>node.js</p>
+                                <p>MongoDB</p>
+                                <p>Python</p>
+                                <p>Docker</p>
+                                <p>GitHub</p>
+                            </section>
 
-                        <section class="backEndDev">
-                            <h2 class="hidden">Back-End Development</h2>
-
-                            <h3>Back-End Development</h3>
-                            <p>PHP</p>
-                            <p>MySQL</p>
-                            <p>node.js</p>
-                            <p>MongoDB</p>
-                            <p>Python</p>
-                            <p>Docker</p>
-                            <p>GitHub</p>
-                        </section>
-
-                        <section class="creativeDev">
-                            <h2 class="hidden">Creative</h2>
+                            <section class="creativeDev">
+                                <h2 class="hidden">Creative</h2>
 
 
-                            <h3>Creative</h3>
-                            <p>Cinema 4D</p>
-                            <p>Photoshop CS6</p>
-                            <p>Illustrator CS6</p>
-                            <p>Adobe XD</p>
-                            <p>InDesign</p>
-                            <p>After Effects</p>
-                            <p>Premiere Pro</p>
+                                <h3>Creative</h3>
+                                <p>Cinema 4D</p>
+                                <p>Photoshop CS6</p>
+                                <p>Illustrator CS6</p>
+                                <p>Adobe XD</p>
+                                <p>InDesign</p>
+                                <p>After Effects</p>
+                                <p>Premiere Pro</p>
+                            </section>
                         </section>
                     </section>
                 </section>
@@ -134,21 +143,34 @@
                 <section class="workFlex">
                     <h3>Portfolio</h3>
                     <section class="workSectionOne">
+                        <h2 class="hidden">Work Section One</h2>
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlayOne">
+                            <h2 class="hidden">INSECTOPEDIA</h2>
+                            <p>INSECTOPEDIA</p>
+                        </section>
+                        <img src="images/insect.png" alt="insect">
 
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
-                        <img src="images/insect.png">
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlayTwo">
+                            <h2 class="hidden">ONTARIO COVID-19 DATA ANALYSIS</h2>
+                            <p>ONTARIO COVID-19 DATA ANALYSIS</p>
+                        </section>
 
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
-                        <img src="images/covidtwo.jpg">
+                        <img src="images/covidtwo.jpg" alt="covid">
                     </section>
 
                     <section class="workSectionTwo">
+                        <h2 class="hidden">Work Section Two</h2>
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlayThree">
+                            <h2 class="hidden">MUSEUM OF ONTARIO ARCHEOLOGY AR APPLICATION</h2>
+                            <p>MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</p>
+                        </section>
+                        <img src="images/moaone.png" alt="moa">
 
-                        <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                        <img src="images/moaone.png">
-
-                        <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                        <img src="images/moatwo.png">
+                        <section class="overlayFour">
+                            <h2 class="hidden">MUSEUM OF ONTARIO ARCHEOLOGY AR APPLICATION</h2>
+                            <p>MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</p>
+                        </section>
+                        <img src="images/moatwo.png" alt="moa">
                     </section>
                 </section>
             </section>
