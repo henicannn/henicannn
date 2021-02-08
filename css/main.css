@@ -26,11 +26,18 @@ body {
 }
 
 #homePage {
-    position: absolute;
+    /* position: absolute; */
 }
 
-.backgroundAnimation {
-    z-index: -1;
+.canvas {
+    position: absolute;
+    display: block;
+    width: 1920px;
+    height: 1080px;
+    /* background-color: #ff4f4f3f; */
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
 }
 
 .mainName h3 {
