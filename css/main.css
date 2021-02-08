@@ -26,53 +26,71 @@ body {
 }
 
 #homePage {
-    /* position: absolute; */
+    position: absolute;
+    width: 100%;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .canvas {
-    position: absolute;
-    display: block;
+    /* position: absolute; */
+    /* display: block; */
     width: 1920px;
+    width: 100%;
     height: 1080px;
-    /* background-color: #ff4f4f3f; */
-    top: 0;
-    left: 0;
+    /* background-color: #ff00003f; */
     /* z-index: -1; */
+}
+
+.mainName {
+    position: absolute;
+    /* top: 1100px; */
+    width: 1920px;
+    width: 100%;
+    top: 0;
+    margin-top: 250px;
+    /* left: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .mainName h3 {
     font-family: 'Poppins', sans-serif;
-    position: absolute;
+    /* position: absolute; */
     font-size: 60px;
     color: #E31B6D;
     font-weight: 1000;
     padding-top: 80px;
     padding-left: 160px;
-    top: 200px;
+    /* top: 200px; */
     line-height: 80px;
 }
 
 .mainName h4 {
     font-family: 'Poppins', sans-serif;
-    position: absolute;
+    /* position: absolute; */
     font-size: 25px;
     color: #ffffff;
     font-weight: 500;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-left: 160px;
-    top: 390px;
+    /* top: 390px; */
     width: 600px;
 }
 
 .mainName button {
-    position: absolute;
+    /* position: absolute; */
     width: 200px;
     height: 50px;
     border-color: #E31B6D;
     background-color: #b4507a00;
     border-style: solid;
     border-width: 2px;
-    margin-top: 550px;
+    margin-top: 40px;
     margin-left: 160px;
     cursor: pointer;
 }
@@ -87,16 +105,12 @@ body {
 .mainName button:hover {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    width: 200px;
-    height: 50px;
     border-color: #E31B6D;
     background-color: #E31B6D;
     transition: 0.5s;
     color: #ffffff;
     border-style: solid;
     border-width: 2px;
-    margin-top: 550px;
-    margin-left: 160px;
     font-size: 18px;
 }
 
@@ -111,8 +125,8 @@ body {
     padding-right: 200px;
     overflow: hidden;
     background-color: rgb(25, 28, 36);
-    position: absolute;
-    width: 1920px;
+    /* position: absolute; */
+    width: 100%;
 }
 
 #mainNav li {
@@ -154,21 +168,29 @@ body {
 }
 
 .aboutParent {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    display: flex;
+    /* width: 1920px; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* height: 100vh; */
 }
 
 #aboutPage {
     position: absolute;
     top: 1100px;
-    left: 0;
+    width: 1920px;
+    width: 100%;
+    /* left: 0; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
+    align-items: center;
+}
+
+.aboutSectionOne {
+    /* width: 100%; */
 }
 
 .aboutSectionOne h3 {
@@ -235,6 +257,7 @@ body {
 .aboutSectionTwo {
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
 }
 
 .aboutSectionTwo h3 {
@@ -249,6 +272,7 @@ body {
 .aboutSubSectionOne {
     display: flex;
     flex-direction: row;
+    width: 80%;
 }
 
 .fronEndDev h3 {
@@ -292,6 +316,7 @@ body {
 .aboutSubSectionTwo {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .backEndDev h3 {
@@ -336,6 +361,7 @@ body {
     position: absolute;
     top: 1900px;
     width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,10 +8,11 @@
     <title>Meet Heni</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.sound.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="mainContainer">
         <header>
             <div id="homePage">
                 <h2 class="hidden">Home Page with Animation</h2>
@@ -31,7 +32,7 @@
                     <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
                 </div>
                 <div class="canvas">
-                    <script src="sketch.js">
+                    <script src="js/sketch.js">
                     </script>
                 </div>
             </div>
@@ -111,28 +112,31 @@
             </div>
         </section>
 
-        <div id="workPage">
+        <section class="workParent">
             <h2 class="hidden">Work Page</h2>
+            <div id="workPage">
+                <h2 class="hidden">Work Page</h2>
 
-            <section class="workFlex">
-                <h3>PORTFOLIO</h3>
-                <section class="workSectionOne">
+                <section class="workFlex">
+                    <h3>PORTFOLIO</h3>
+                    <section class="workSectionOne">
 
-                    <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
-                    <img src="images/insect.png">
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
+                        <img src="images/insect.png">
 
-                    <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
-                    <img src="images/covidtwo.jpg">
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/covid.html" class="overlay">ONTARIO COVID-19 DATA ANALYSIS</section>
+                        <img src="images/covidtwo.jpg">
+                    </section>
+
+                    <section class="workSectionTwo">
+                        <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
+                        <img src="images/moaone.png">
+                        <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
+                        <img src="images/moatwo.png">
+                    </section>
                 </section>
-
-                <section class="workSectionTwo">
-                    <section onclick="redirectIt(this)" href="https://henicannn.com/moa.html" class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                    <img src="images/moaone.png">
-                    <section class="overlay">MUSEUM OF ONTARIO ARCHEOLOGY<br>AR APPLICATION</section>
-                    <img src="images/moatwo.png">
-                </section>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
 
@@ -163,7 +167,7 @@
     </script>
 
     <script src="js/navBar.js"></script>
-    <script src="js/displayNone.js"></script>
+    <script src="js/inspectElement.js"></script>
 
 
 </body>
