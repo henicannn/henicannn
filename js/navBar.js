@@ -19,19 +19,20 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
-        $('#mainNav').fadeIn();
+        $('#openButton').fadeIn();
+
     } else {
-        $('#mainNav').fadeOut();
+        $('#openButton').fadeOut();
     }
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-        $('#homePage').fadeOut();
-    } else {
-        $('#homePage').fadeIn();
-    }
-});
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 0) {
+//         $('#homePage').fadeOut();
+//     } else {
+//         $('#homePage').fadeIn();
+//     }
+// });
 
 
 $(window).scroll(function() {
