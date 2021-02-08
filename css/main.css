@@ -363,6 +363,7 @@ canvas {
 
 .workFlex {
     /* z-index: -1; */
+    margin-left: 10px;
 }
 
 .workFlex h3 {
