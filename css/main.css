@@ -361,9 +361,10 @@ canvas {
     align-items: center;
 }
 
-.workFlex {
+
+/* .workFlex {
     margin-right: -10px;
-}
+} */
 
 .workFlex h3 {
     font-family: 'Poppins', sans-serif;
