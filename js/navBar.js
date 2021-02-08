@@ -50,13 +50,15 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 1500) {
+    if ($(this).scrollTop() > 2000) {
         $("#work").addClass("active").animate();
         $("#about").removeClass("active").animate();
     } else {
         $("#work").removeClass("active").animate();
     }
 });
+
+
 
 
 function myFunction() {

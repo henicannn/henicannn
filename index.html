@@ -25,7 +25,7 @@
             <nav id="mainNav" class="hidden">
 
                 <ul>
-                    <li class="selected"><a id="contact" class="nav" href="#contactPage">CONTACT ME</a></li>
+                    <li class="selected"><a id="contact" class="nav" href="#formPage">CONTACT ME</a></li>
                     <li class="selected"><a id="work" class="nav" href="#workPage">MY WORK</a></li>
                     <li class="selected"><a id="about" class="nav" href="#aboutPage">ABOUT</a></li>
                     <li class="selected"><a id="home" class="nav" href="#homePage">HOME</a></li>
@@ -132,7 +132,7 @@
                 <h2 class="hidden">Work Page</h2>
 
                 <section class="workFlex">
-                    <h3>PORTFOLIO</h3>
+                    <h3>Portfolio</h3>
                     <section class="workSectionOne">
 
                         <section onclick="redirectIt(this)" href="https://henicannn.com/insectopedia.html" class="overlay">INSECTOPEDIA</section>
@@ -152,6 +152,28 @@
                     </section>
                 </section>
             </section>
+        </section>
+
+
+        <section class="formParent">
+            <h2 class="hidden">Work Page Parent</h2>
+            <section id="formPage">
+                <h2 class="hidden">Form</h2>
+                <h3>Let's work togather !</h3>
+                <form action="/action_page.php">
+
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                    <input type="text" id="mail" name="email" placeholder="name@example.com">
+
+                    <input type="text" id="message" name="message" placeholder="Your Message">
+
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+
         </section>
 
         <script src="js/main.js"></script>
