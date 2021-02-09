@@ -344,15 +344,6 @@ canvas {
 
 @media screen and (max-width: 800px) {
     #workPage {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* .workFlex {
-    margin-right: -10px;
-} */
-    .workParent h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: #A92061;
@@ -360,125 +351,83 @@ canvas {
         text-align: center;
         line-height: 80px;
     }
-    .workSectionOne img {
-        width: 300px;
-        height: 220px;
-        position: absolute;
-        margin-top: -220px;
+    .mainWorkContainer {
+        position: relative;
+        /* width: 1300px; */
+        width: 50%;
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .workSectionTwo img {
-        width: 300px;
-        height: 220px;
-        position: absolute;
-        margin-top: -220px;
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
     }
     .overlayOne {
-        width: 300px;
-        height: 220px;
-        background-color: #ffffff00;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        color: rgba(255, 255, 255, 0);
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        position: relative;
-    }
-    .overlayOne:hover {
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 15px;
-        width: 300px;
-        height: 220px;
-        transition: 0.2s;
-        cursor: pointer;
+        position: absolute;
+        top: 0;
+        height: 25%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
         background-color: #a92060ec;
-        /* margin-right: -650px; */
+    }
+    .containerOne:hover .overlayOne {
+        opacity: 1;
     }
     .overlayTwo {
-        width: 300px;
-        height: 220px;
-        background-color: #ffffff00;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        color: rgba(255, 255, 255, 0);
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        position: relative;
-    }
-    .overlayTwo:hover {
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 15px;
-        width: 300px;
-        height: 220px;
-        transition: 0.2s;
-        cursor: pointer;
+        position: absolute;
+        top: 0;
+        margin-top: 77%;
+        height: 25%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
         background-color: #a92060ec;
-        /* margin-right: -650px; */
+    }
+    .containerTwo:hover .overlayTwo {
+        opacity: 1;
     }
     .overlayThree {
-        width: 300px;
-        height: 220px;
-        background-color: #ffffff00;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        color: rgba(255, 255, 255, 0);
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        position: relative;
-    }
-    .overlayThree:hover {
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 15px;
-        width: 300px;
-        height: 220px;
-        transition: 0.2s;
-        cursor: pointer;
+        position: absolute;
+        height: 25%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
         background-color: #a92060ec;
-        /* margin-right: -650px; */
+    }
+    .containerThree:hover .overlayThree {
+        opacity: 1;
     }
     .overlayFour {
-        width: 300px;
-        height: 220px;
-        background-color: #ffffff00;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        color: rgba(255, 255, 255, 0);
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        height: 25%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #a92060ec;
     }
-    .overlayFour:hover {
+    .containerFour:hover .overlayFour {
+        opacity: 1;
+    }
+    .text {
         font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 25px;
+        font-weight: 800;
         color: white;
         font-size: 15px;
-        width: 300px;
-        height: 220px;
-        transition: 0.2s;
-        cursor: pointer;
-        background-color: #a92060ec;
-        /* margin-right: -650px; */
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 }
 

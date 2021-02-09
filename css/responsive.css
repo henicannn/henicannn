@@ -285,7 +285,7 @@
         text-align: center;
         padding-bottom: 10px;
     }
-    .workParent h3 {
+    #workPage {
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: #A92061;
@@ -293,130 +293,88 @@
         text-align: center;
         line-height: 80px;
     }
-    #workPage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .mainWorkContainer {
+        position: relative;
+        /* width: 1300px; */
+        width: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image {
+        display: block;
         width: 100%;
-        /* width: 100vh; */
+        height: auto;
     }
-    #workFlex {
-        display: flex;
-        flex-direction: column;
-    }
-    #workSectionOne {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #workSectionTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #workSectionOne img {
-        width: 500px;
-        height: 380px;
-    }
-    #workSectionTwo img {
-        width: 500px;
-        height: 380px;
-    }
-    #overlayOne {
-        width: 500px;
-        height: 380px;
+    .overlayOne {
         position: absolute;
-        margin-right: 500px;
-        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #a92060ec;
+    }
+    .containerOne:hover .overlayOne {
+        opacity: 1;
+    }
+    .overlayTwo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #a92060ec;
+    }
+    .containerTwo:hover .overlayTwo {
+        opacity: 1;
+    }
+    .overlayFour {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #a92060ec;
+    }
+    .containerFour:hover .overlayFour {
+        opacity: 1;
+    }
+    .overlayThree {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #a92060ec;
+    }
+    .containerThree:hover .overlayThree {
+        opacity: 1;
+    }
+    .text {
         font-family: 'Poppins', sans-serif;
         text-align: center;
-        line-height: 40px;
+        line-height: 25px;
         font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    #overlayOne:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
         color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    #overlayTwo {
-        width: 500px;
-        height: 380px;
+        font-size: 18px;
         position: absolute;
-        margin-left: 500px;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        font-size: 40%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    #overlayTwo:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    #overlayThree {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        margin-right: 500px;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    #overlayThree:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    #overlayFour {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        margin-left: 500px;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    #overlayFour:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
     }
     #formPage {
         padding: 20px;
