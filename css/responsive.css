@@ -1,4 +1,4 @@
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 800px) {
     canvas {
         display: block;
         width: 100%;
@@ -285,7 +285,7 @@
         text-align: center;
         padding-bottom: 10px;
     }
-    .workFlex h3 {
+    .workParent h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: #A92061;
@@ -293,122 +293,130 @@
         text-align: center;
         line-height: 80px;
     }
-    .workSectionOne {
+    #workPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* width: 100vh; */
+    }
+    #workFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    #workSectionOne {
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
-        margin-left: 450px;
+        justify-content: space-around;
     }
-    .workSectionOne img {
-        width: 500px;
-        height: 380px;
-        position: relative;
-        /* margin-bottom: 220px; */
-    }
-    .overlayOne {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    .overlayOne:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    .overlayTwo {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        z-index: 1;
-        margin-left: 500px;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    .overlayTwo:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    .overlayThree {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        z-index: 1;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    .overlayThree:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    .overlayFour {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        z-index: 1;
-        margin-left: 500px;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 800;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-    }
-    .overlayFour:hover {
-        width: 500px;
-        height: 380px;
-        position: absolute;
-        color: white;
-        background-color: #a92060ec;
-        transition: 0.3s;
-    }
-    .workSectionTwo {
+    #workSectionTwo {
         display: flex;
         flex-direction: row;
-        margin-left: 450px;
+        justify-content: space-around;
     }
-    .workSectionTwo img {
+    #workSectionOne img {
         width: 500px;
         height: 380px;
-        position: relative;
-        /* margin-bottom: 220px; */
+    }
+    #workSectionTwo img {
+        width: 500px;
+        height: 380px;
+    }
+    #overlayOne {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        margin-right: 500px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    #overlayOne:hover {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        color: white;
+        background-color: #a92060ec;
+        transition: 0.3s;
+    }
+    #overlayTwo {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        margin-left: 500px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    #overlayTwo:hover {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        color: white;
+        background-color: #a92060ec;
+        transition: 0.3s;
+    }
+    #overlayThree {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        margin-right: 500px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    #overlayThree:hover {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        color: white;
+        background-color: #a92060ec;
+        transition: 0.3s;
+    }
+    #overlayFour {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        margin-left: 500px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    #overlayFour:hover {
+        width: 500px;
+        height: 380px;
+        position: absolute;
+        color: white;
+        background-color: #a92060ec;
+        transition: 0.3s;
     }
     #formPage {
         padding: 20px;

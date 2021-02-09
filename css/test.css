@@ -1,39 +1,137 @@
-#mainNav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 200px;
-    overflow: hidden;
-    background-color: rgb(25, 28, 36);
-    /* Safari */
-    position: absolute;
-    width: 1920px;
-    z-index: 100;
-    /* margin-top: 955px; */
-}
-
-#mainNav li {
-    float: right;
-}
-
-#mainNav li a {
+.workFlex h3 {
     font-family: 'Poppins', sans-serif;
-    display: block;
-    color: white;
+    font-size: 40px;
+    color: #A92061;
+    font-weight: 800;
     text-align: center;
-    padding: 14px 35px;
-    text-decoration: none;
-    font-weight: 400;
+    line-height: 80px;
 }
 
-#mainNav li a:hover {
-    color: #ff519a;
+.workSectionOne {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    /* margin-left: 450px; */
+}
+
+.workSectionOne img {
+    width: 500px;
+    height: 380px;
+    position: relative;
+    margin-bottom: 220px;
+}
+
+.overlayOne {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    z-index: 1;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.overlayOne:hover {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    color: white;
+    background-color: #a92060ec;
     transition: 0.3s;
 }
 
-.sticky {
-    position: fixed;
-    margin-top: 970px;
-    width: 100%;
+.overlayTwo {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 500px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.overlayTwo:hover {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    color: white;
+    background-color: #a92060ec;
+    transition: 0.3s;
+}
+
+.overlayThree {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.overlayThree:hover {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    color: white;
+    background-color: #a92060ec;
+    transition: 0.3s;
+}
+
+.overlayFour {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 500px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.overlayFour:hover {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    color: white;
+    background-color: #a92060ec;
+    transition: 0.3s;
+}
+
+.workSectionTwo {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 450px; */
+}
+
+.workSectionTwo img {
+    width: 500px;
+    height: 380px;
+    position: relative;
+    /* margin-bottom: 220px; */
 }

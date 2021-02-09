@@ -342,7 +342,7 @@ canvas {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 800px) {
     #workPage {
         width: 100%;
         display: flex;
@@ -352,14 +352,13 @@ canvas {
     /* .workFlex {
     margin-right: -10px;
 } */
-    .workFlex h3 {
+    .workParent h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: #A92061;
-        text-align: center;
         font-weight: 800;
+        text-align: center;
         line-height: 80px;
-        padding: 50px;
     }
     .workSectionOne img {
         width: 300px;
