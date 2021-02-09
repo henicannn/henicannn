@@ -1,15 +1,17 @@
-var message = "Function Disabled For Security Purpose";
-
-function rtclickcheck(keyp) {
-    if (navigator.appName == "Netscape" && keyp.which == 3) {
-        alert(message);
+document.onkeydown = function(e) {
+    if (event.keyCode == 123) {
         return false;
     }
-
-    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
-        alert(message);
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
 }
-
-document.onmousedown = rtclickcheck;
