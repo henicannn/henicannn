@@ -17,18 +17,13 @@ $(document).ready(function() {
     });
 });
 
-if ($(window).width() < 767) {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) {
-            $('#openButton').fadeIn();
+// if ($(window).width() < 767) {
 
-        } else {
-            $('#openButton').fadeOut();
-        }
-    });
-} else {
-    // change functionality for larger screens
-}
+//     $('#mainNav').show();
+
+// } else {
+//     $('#mainNav').show();
+// };
 
 if ($(window).width() > 1280) {
     $(window).scroll(function() {
@@ -59,11 +54,20 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 2000) {
+    if ($(this).scrollTop() > 1500) {
         $("#work").addClass("active").animate();
         $("#about").removeClass("active").animate();
     } else {
         $("#work").removeClass("active").animate();
+    }
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2200) {
+        $("#contact").addClass("active").animate();
+        $("#work").removeClass("active").animate();
+    } else {
+        $("#contact").removeClass("active").animate();
     }
 });
 

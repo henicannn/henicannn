@@ -68,14 +68,23 @@
         z-index: 100;
     }
     #mainNav ul {
+        position: absolute;
+        position: fixed;
         list-style-type: none;
+        top: 0;
+        right: 0;
         margin: 0;
         padding: 0;
-        padding-right: 200px;
         overflow: hidden;
-        background-color: rgb(25, 28, 36);
-        /* position: absolute; */
+        background-color: rgba(25, 28, 36, 0.856);
         width: 100%;
+        height: 5%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: right;
+        align-items: center;
+        /* margin-left: auto; */
+        padding-right: 20vh;
     }
     #mainNav li {
         float: right;
@@ -378,10 +387,15 @@
     }
     #formPage {
         padding: 20px;
+        width: 100%;
+        width: 40vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .formParent h3 {
         font-family: 'Poppins', sans-serif;
