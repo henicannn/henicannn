@@ -37,6 +37,7 @@
         width: 1920px;
         text-align: left;
         padding-left: 500px;
+        /* margin-right: auto; */
     }
     .mainName button {
         width: 200px;
