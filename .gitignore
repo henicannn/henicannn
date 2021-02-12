@@ -9,7 +9,7 @@
 /views
 
 # misc
-.env
-.app.js
-.package-lock.json
-.package.json
+/.env
+/.app.js
+/.package-lock.json
+/.package.json
