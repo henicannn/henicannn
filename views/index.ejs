@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Heni Manavadariya (Creative Media Developer)</title>
+
+    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/responsive.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="/javascripts/p5.js"></script>
+    <script src="/javascripts/p5.sound.min.js"></script>
+
+</head>
+
+<body type="hidden">
+
+    <main class="mainContainer">
+        <header>
+
+            <button onclick="myFunction()" id="openButton">☰</button>
+            <nav id="mainNav" class="hidden">
+
+                <ul>
+                    <li><a id="contact" class="nav" href="#formPage">CONTACT ME</a></li>
+                    <li><a id="work" class="nav" href="#workPage">MY WORK</a></li>
+                    <li><a id="about" class="nav" href="#aboutPage">ABOUT</a></li>
+                    <li><a id="home" class="nav" href="#homePage">HOME</a></li>
+                </ul>
+            </nav>
+
+            <section id="homePage">
+                <h2 class="hidden">Home Page with Animation</h2>
+                <section class="mainName">
+                    <h2 class="hidden">Heni Manavadariya</h2>
+                    <h3>Heni</h3>
+                    <h3>Manavadariya</h3>
+                    <h4>The technology you use impresses no one</h4>
+                    <h4>but the experience you create with it</h4>
+                    <h4>everything.</h4>
+                    <br>
+                    <br>
+                    <h4>~ Seaun Gerety</h4>
+                    <button id="selected"><a href="#aboutPage">Let's take a leap ▼</a></button>
+                </section>
+                <section id="canvas">
+                    <h2 class="hidden">Animation Canvas</h2>
+                    <script src="/javascripts/sketch.js">
+                    </script>
+                </section>
+            </section>
+        </header>
+
+        <section class="aboutParent">
+            <h2 class="hidden">About Parent Container</h2>
+            <section id="aboutPage">
+
+                <h2 class="hidden">About Page</h2>
+                <section class="aboutSectionOne">
+                    <h3>Who is Heni ?</h3>
+                    <p>Accomplished media development with a humbled soul and eager to learn attitude. Organized problem solver who swiftly handles data analysis tools, designing tools, along with vast experience in web-based coding.</p>
+                    <img src="/images/heni.png" alt="Heni">
+                    <button id="selected"><a href="/includes/heni_resume.pdf" target="_blank">My Resume ▶</a></button>
+
+                </section>
+
+
+                <section class="aboutSectionTwo">
+
+                    <h3>Skills</h3>
+                    <section class="skills">
+                        <h2 class="hidden">SKILLS</h2>
+                        <!-- <h3>Skills</h3> -->
+
+                        <section class="aboutSubSectionOne">
+                            <h2 class="hidden">About Sub Section One</h2>
+
+                            <section class="fronEndDev">
+                                <h2 class="hidden">Front-End Development</h2>
+
+                                <h3>Front-End Development</h3>
+                                <p>HTML5</p>
+                                <p>CSS3</p>
+                                <p>Sass</p>
+                                <p>JavaScript</p>
+                                <p>JQuery</p>
+                                <p>Bootstrap</p>
+                                <p>GitHub</p>
+                            </section>
+
+                            <section class="dataDev">
+                                <h2 class="hidden">Data Visualization</h2>
+
+                                <h3>Data Visualization</h3>
+                                <p>Python Pandas</p>
+                                <p>Tableau</p>
+                                <p>D3.js</p>
+                                <p>chart.js</p>
+                                <p>Google Charts</p>
+                                <p>p5.js</p>
+                                <p>Arduino | Raspberry Pi</p>
+                            </section>
+                        </section>
+                        <section class="aboutSubSectionTwo">
+                            <h2 class="hidden">About Sub Section Two</h2>
+
+                            <section class="backEndDev">
+                                <h2 class="hidden">Back-End Development</h2>
+
+                                <h3>Back-End Development</h3>
+                                <p>PHP</p>
+                                <p>MySQL</p>
+                                <p>node.js</p>
+                                <p>MongoDB</p>
+                                <p>Python</p>
+                                <p>Docker</p>
+                                <p>GitHub</p>
+                            </section>
+
+                            <section class="creativeDev">
+                                <h2 class="hidden">Creative</h2>
+
+
+                                <h3>Creative</h3>
+                                <p>Cinema 4D</p>
+                                <p>Photoshop CS6</p>
+                                <p>Illustrator CS6</p>
+                                <p>Adobe XD</p>
+                                <p>InDesign</p>
+                                <p>After Effects</p>
+                                <p>Premiere Pro</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <div id="workPage">
+            <h3>Portfolio</h3>
+            <div class="mainWorkContainer">
+                <div class="containerOne">
+                    <img src="/images/insect.png" alt="INSECTOPEDIA" class="image">
+                    <div class="overlayOne">
+                        <div class="text">INSECTOPEDIA AR APPLICATION</div>
+                    </div>
+                </div>
+                <div class="containerTwo">
+                    <img src="/images/covid.jpg" alt="ONTARIO COVID-19 DATA ANALYSIS" class="image">
+                    <div class="overlayTwo">
+                        <div class="text">ONTARIO COVID-19 DATA ANALYSIS</div>
+                    </div>
+                </div>
+                <div class="containerThree">
+
+                    <div class="overlayThree">
+                        <div class="text">MUSEUM OF ONTARIO ARCHEOLOGY AR APPLICATION</div>
+                    </div>
+                    <img src="/images/moaone.png" alt="MUSEUM OF ONTARIO ARCHEOLOGY
+                    AR APPLICATION" class="image">
+                </div>
+                <div class="containerFour">
+                    <img src="/images/moatwo.png" alt="MUSEUM OF ONTARIO ARCHEOLOGY
+                    AR APPLICATION" class="image">
+                    <div class="overlayFour">
+                        <div class="text">MUSEUM OF ONTARIO ARCHEOLOGY AR APPLICATION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="formParent">
+            <h2 class="hidden">Work Page Parent</h2>
+            <section id="formPage">
+                <h2 class="hidden">Form</h2>
+                <h3>Let's work togather !</h3>
+                <form action="/submit/add" method="post">
+
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+                    <input type="text" id="mail" name="email" placeholder="name@example.com">
+
+                    <input type="text" id="message" name="message" placeholder="Your Message">
+
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+
+        </section>
+
+
+        <script src="/javascripts/main.js"></script>
+        <script src="/javascripts/canvasResponsive.js"></script>
+        <script src="/javascripts/navBar.js"></script>
+        <script src="/javascripts/inspectElement.js"></script>
+    </main>
+
+</body>
+
+</html>
